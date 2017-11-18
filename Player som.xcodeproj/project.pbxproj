@@ -12,6 +12,7 @@
 		EC6942EB1FBFBE7B00D7EEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6942E91FBFBE7B00D7EEF7 /* Main.storyboard */; };
 		EC6942ED1FBFBE7B00D7EEF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6942EC1FBFBE7B00D7EEF7 /* Assets.xcassets */; };
 		EC6942F01FBFBE7B00D7EEF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6942EE1FBFBE7B00D7EEF7 /* LaunchScreen.storyboard */; };
+		EC6942F91FBFBFFA00D7EEF7 /* bach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC6942F81FBFBFFA00D7EEF7 /* bach.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EC6942EC1FBFBE7B00D7EEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6942EF1FBFBE7B00D7EEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6942F11FBFBE7B00D7EEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6942F81FBFBFFA00D7EEF7 /* bach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bach.mp3; path = ../../../../../Downloads/bach.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EC6942E41FBFBE7B00D7EEF7 /* Player som */ = {
 			isa = PBXGroup;
 			children = (
+				EC6942F71FBFBFB200D7EEF7 /* sons */,
 				EC6942E51FBFBE7B00D7EEF7 /* AppDelegate.swift */,
 				EC6942E71FBFBE7B00D7EEF7 /* ViewController.swift */,
 				EC6942E91FBFBE7B00D7EEF7 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				EC6942F11FBFBE7B00D7EEF7 /* Info.plist */,
 			);
 			path = "Player som";
+			sourceTree = "<group>";
+		};
+		EC6942F71FBFBFB200D7EEF7 /* sons */ = {
+			isa = PBXGroup;
+			children = (
+				EC6942F81FBFBFFA00D7EEF7 /* bach.mp3 */,
+			);
+			path = sons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6942F91FBFBFFA00D7EEF7 /* bach.mp3 in Resources */,
 				EC6942F01FBFBE7B00D7EEF7 /* LaunchScreen.storyboard in Resources */,
 				EC6942ED1FBFBE7B00D7EEF7 /* Assets.xcassets in Resources */,
 				EC6942EB1FBFBE7B00D7EEF7 /* Main.storyboard in Resources */,
