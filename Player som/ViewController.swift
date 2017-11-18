@@ -11,9 +11,27 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer!
+    @IBOutlet weak var sliderVolume: UISlider!
     
-
+    @IBAction func atualizarVolume(_ sender: Any) {
+        player.volume = sliderVolume.value
+    }
+    
+    
+    @IBAction func play(_ sender: Any) {
+        player.play()
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+        player.pause()
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        player.stop()
+        player.currentTime = 0
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,8 +41,13 @@ class ViewController: UIViewController {
             
             do {
                 player = try AVAudioPlayer(contentsOf: url)
+                
+                //joga no buffer
                 player.prepareToPlay()
-                player.play()
+                
+//                //executa o audio
+//                player.play()
+                
             } catch let erro {
                 print("ERRO: \(erro.localizedDescription)")
             }
